@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kawaii Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page-deco top-left">
+    <span class="deco-heart">♥</span>
+    <span class="deco-star">★</span>
+    <span class="deco-heart small">♥</span>
+  </div>
+  <div class="page-deco top-right">
+    <span class="deco-star small">★</span>
+    <span class="deco-heart">♥</span>
+    <span class="deco-star">★</span>
+  </div>
+
+  <main>
+    <div class="calc-wrap">
+
+      <!-- Brand bar -->
+      <div class="brand-bar">
+        <span class="brand-deco">♥ ★ ✿</span>
+        <span class="brand-name">KAWAII-CALC</span>
+        <span class="brand-deco">✿ ★ ♥</span>
+      </div>
+
+      <!-- Calculator shell -->
+      <div class="calculator">
+
+        <!-- Screen -->
+        <div class="screen-bezel">
+          <div class="screen">
+            <div class="screen-expr" id="expr"></div>
+            <div class="screen-display" id="display">0</div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-grid">
+          <!-- Row 1 -->
+          <button class="btn btn-util btn-ac" data-action="ac" class="btn-cat">AC</button>
+          <button class="btn btn-util"        data-action="c">C</button>
+          <button class="btn btn-op"          data-action="op" data-op="÷">÷</button>
+          <button class="btn btn-op"          data-action="op" data-op="×">×</button>
+
+          <!-- Row 2 -->
+          <button class="btn btn-num" data-action="digit" data-val="7">7</button>
+          <button class="btn btn-num" data-action="digit" data-val="8">8</button>
+          <button class="btn btn-num" data-action="digit" data-val="9">9</button>
+          <button class="btn btn-op"  data-action="op"    data-op="−">−</button>
+
+          <!-- Row 3 -->
+          <button class="btn btn-num" data-action="digit" data-val="4">4</button>
+          <button class="btn btn-num" data-action="digit" data-val="5">5</button>
+          <button class="btn btn-num" data-action="digit" data-val="6">6</button>
+          <button class="btn btn-op"  data-action="op"    data-op="+">+</button>
+
+          <!-- Row 4 -->
+          <button class="btn btn-num" data-action="digit" data-val="1">1</button>
+          <button class="btn btn-num" data-action="digit" data-val="2">2</button>
+          <button class="btn btn-num" data-action="digit" data-val="3">3</button>
+          <!-- = spans rows 4–5 -->
+          <button class="btn btn-eq span-row" data-action="equals">=</button>
+
+          <!-- Row 5 -->
+          <button class="btn btn-num span-col" data-action="digit" data-val="0">0</button>
+          <button class="btn btn-num"          data-action="dot">.</button>
+        </div>
+
+      </div><!-- /.calculator -->
+
+      <!-- Bottom decoration -->
+      <div class="bottom-deco">
+        <span>✿</span><span>♥</span><span>★</span><span>♥</span><span>✿</span>
+      </div>
+
+    </div><!-- /.calc-wrap -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
